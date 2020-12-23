@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+   
+    <div id="wrapper">
+        
+      <div id="left">
+        <div id="signin">
+          <div class="logo">
+            <img src="https://image.ibb.co/hW1YHq/login-logo.png" alt="Sluralpright" />
+          </div>
+          <form th:action="@{/doLogin}" method="post" class="form-center">
+            <div class = "form-content">
+              <div class = "form-width">
+                <div>
+                  <label>Email or username</label>
+                </div>
+                <input type="text" class="text-input" />
+              </div>
+              <div>
+                <div>
+                  <label>Password</label>
+                </div>
+                <input type="password" class="text-input" />
+              </div>
+              <input type="checkbox"><span class = "remember_me_text">Remember Me</span>
+              </input>
+                <button type="submit" class="primary-btn">Sign In</button>
+            </div>
+          </form>
+          <div class="links">
+            <a href="#">
+              <span class="txt">Forgot Password</span>
+            </a>
+       
+          </div>
+          <div class="or">
+            <hr class="bar" />
+            <span>OR</span>
+            <hr class="bar" />
+          </div>
+          <a href="#" class="secondary-btn">Create an account</a>
+        </div>
+        
+      </div>
+
+        <div id="right "  >
+          <div id="showcase">
+
+            <div >
+              <h1 class="showcase-text">
+                Let's create the future <strong>together</strong>
+              </h1>
+              <a href="#" class="secondary-btn">Start a FREE 10-day trial</a>
+             </div>
+            
+          </div>
+        </div>
+    </div>
+      
+</body>
+</html>
